@@ -118,6 +118,10 @@
     padding: 0;
     min-width: 0;
   }
+  .field--phone .phone-wrap .iti__flag-container:hover,
+  .field--phone .phone-wrap .iti__selected-flag:hover{
+    background: transparent !important;
+  }
   .field--phone .phone-wrap .iti__selected-flag{
     padding: 0 !important;
     margin: 0;
@@ -126,10 +130,23 @@
   .field--phone .phone-wrap .phone-dial-code{
     font-size: 16px;
     color: #111;
+    margin-left: 6px;
     margin-right: 4px !important;
   }
   .field--phone .phone-wrap .iti__arrow{
-    margin-left: 0;
+    margin-left: 6px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #333;
+    border-bottom: none;
+    margin-top: -3px;
+  }
+  .field--phone .phone-wrap .iti.iti--container-open .iti__arrow{
+    border-top: none;
+    border-bottom: 6px solid #333;
+    margin-top: -6px;
   }
   .field--phone .input--phone{
     flex: 1;
@@ -170,7 +187,7 @@
     font-weight: 600;
     cursor: pointer;
   }
-  .btn:hover{ filter: brightness(0.96); }
+  .btn:hover{ filter: none; }
   
   .fineprint{
     margin: 24px 0 0;
