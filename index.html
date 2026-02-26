@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Altyn City</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19/build/css/intlTelInput.css" />
+</head>
+<body>
+
+  <main class="layout">
+    <section class="left">
+      <div class="logos">
+        <img class="logos__img" src="img/altyn-city.png" alt="Altyn City">
+        <img class="logos__img" src="img/exclusive-qurylys.png" alt="Exclusive Qurylys">
+      </div>
+
+      <div class="left__inner">
+        <h1 class="title">
+          Квартиры рядом<br>
+          с Aport Mall East
+        </h1>
+
+        <p class="subtitle">
+          Оставьте заявку, чтобы получить консультацию у менеджера
+        </p>
+
+        <form class="form" action="#" method="post">
+          <label class="field field--name">
+            <input class="input input--name" type="text" name="name" placeholder="Ваше имя" autocomplete="name">
+          </label>
+
+          <label class="field field--phone">
+            <span class="label">&nbsp;</span>
+            <div class="phone-wrap">
+              <input id="phone" class="input input--phone" type="tel" name="phone" autocomplete="tel" />
+              <input type="hidden" name="phone_full" value="" />
+            </div>
+          </label>
+
+          <button class="btn" type="submit">Оставить заявку</button>
+
+          <p class="fineprint">
+            Нажимая на кнопку «Отправить», вы соглашаетесь с
+            <a class="link" href="https://altyncity.kz/policy" target="_blank" rel="noopener">Политикой конфиденциальности</a>
+            и
+            <a class="link" href="https://altyncity.kz/agreement" target="_blank" rel="noopener">Пользовательским соглашением</a>.
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="right" aria-hidden="true">
+      <img class="right__img" src="img/altyn%20city%20(1).png" alt="">
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/imask@7.6.1/dist/imask.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19/build/js/intlTelInput.min.js"></script>
+  <script src="js/phone.js"></script>
+</body>
+</html>
